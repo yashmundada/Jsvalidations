@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script
+    src="https://kit.fontawesome.com/6b47860256.js"
+    crossorigin="anonymous"
+  ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="input_group">
+      <input
+        type="email"
+        placeholder="User Email"
+        id="contact-email"
+        onkeyup="validateEmail()"
+      /><span id="email-error"></span>
+    </div>
+    <button type="submit" id="contact-form" onkeyup="validateForm()">
+      submit</button
+    ><br />
+  </body>
+
+  <script src="EmailValidation.js"></script>
+</html>

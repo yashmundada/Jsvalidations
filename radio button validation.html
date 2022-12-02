@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+function myfun(){
+
+var a= document.forms.container;
+for(i=0 ; i<a.length;i++){
+    if (a[i].checked==true) 
+    {
+        return true;
+        
+    }
+    document.getElementById("message").innerHTML="select plz"
+    return false;
+}
+
+
+}
+
+</script>
+<body><h1>radio button validation</h1>
+    <form action="" name="forms" onsubmit="return myfun()">
+        <input type="radio" name="container" value="like">male</input>
+        <input type="radio" name="container" value="like">female</input> 
+        <div><p id="message"></p></div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
